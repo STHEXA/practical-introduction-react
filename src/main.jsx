@@ -6,9 +6,9 @@ import App from "./App.jsx";
 const root = createRoot(document.getElementById("root"));
 setInterval(() => {
   root.render(
-    // <StrictMode>
-    //   <App />
-    // </StrictMode>,
-    <p>現在時刻：{new Date().toLocaleString()}</p>,
+    <StrictMode>
+      <App />
+    </StrictMode>,
+    // <p>現在時刻：{new Date().toLocaleString()}</p>,
   );
 });
