@@ -517,15 +517,11 @@ const root = createRoot(document.getElementById("root"));
 //   <StateNestImmer2 />
 // );
 
-root.render(<StateTodo />);
+// root.render(<StateTodo />);
 
-// root.render(
-//   <FormBasic />
-// );
+// root.render(<FormBasic />);
 
-// root.render(
-//   <FormYup />
-// );
+root.render(<FormYup />);
 
 // root.render(
 //   <FormJapan />
