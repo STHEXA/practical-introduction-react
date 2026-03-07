@@ -529,19 +529,13 @@ const root = createRoot(document.getElementById("root"));
 // #endregion
 
 // #region ■■chap05■■
-root.render(<LazyBasic />);
+// root.render(<LazyBasic />);
 
-// root.render(
-//   <LazyMulti />
-// );
+// root.render(<LazyMulti />);
 
-// root.render(
-//   <SuspenseSimple />
-// );
+// root.render(<SuspenseSimple />);
 
-// root.render(
-//   <SuspenseResult />
-// );
+root.render(<SuspenseResult />);
 
 // root.render(
 //   <ProfilerBasic />

@@ -7,8 +7,8 @@ export default function ThrowPromise() {
   throw new Promise((resolve, reject) => {
     setTimeout(() => {
       flag = true;
-      resolve('Success!!');
-      // reject(new Error('An error occurred!!'));
+      // resolve('Success!!');
+      reject(new Error("An error occurred!!"));
     }, 3000);
   });
 }
