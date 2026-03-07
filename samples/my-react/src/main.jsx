@@ -521,7 +521,7 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<FormBasic />);
 
-root.render(<FormYup />);
+// root.render(<FormYup />);
 
 // root.render(
 //   <FormJapan />
@@ -529,9 +529,7 @@ root.render(<FormYup />);
 // #endregion
 
 // #region ■■chap05■■
-// root.render(
-//   <LazyBasic />
-// );
+root.render(<LazyBasic />);
 
 // root.render(
 //   <LazyMulti />
