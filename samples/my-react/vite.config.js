@@ -1,28 +1,31 @@
 /// <reference types="vitest/config" />
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vite.dev/config/
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
-const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
+const dirname =
+  typeof __dirname !== "undefined"
+    ? __dirname
+    : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react()],
-  // css: {
-  //   modules: {
-  //     localsConvention: "camelCase",
-  //     generateScopedName: "[name]__[local]___[hash:base64:5]",
-  //     hashPrefix: "wings",
-  //     scopeBehaviour: "local",
-  //    globalModulePaths: [/_global\.module\.css$/],
-  //   },
-  // },
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+      generateScopedName: "[name]__[local]___[hash:base64:5]",
+      // hashPrefix: "wings",
+      // scopeBehaviour: "local",
+      // globalModulePaths: [/_global\.module\.css$/],
+    },
+  },
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: "jsdom",
     setupFiles: ["./vitest-setup.js"],
     // projects: [{
     //   extends: true,
@@ -45,5 +48,5 @@ export default defineConfig({
     //     setupFiles: ['.storybook/vitest.setup.js']
     //   }
     // }]
-  }
+  },
 });
