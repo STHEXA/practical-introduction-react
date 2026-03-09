@@ -535,26 +535,20 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<SuspenseSimple />);
 
-root.render(<SuspenseResult />);
+// root.render(<SuspenseResult />);
 
-// root.render(
-//   <ProfilerBasic />
-// );
+// root.render(<ProfilerBasic />);
 
-// root.render(
-//   <ModuleBasic />
-// );
+// root.render(<ModuleBasic />);
 
 // root.render(
 //   <>
 //     <h3 className="head">CSS Modules</h3>
 //     <ModuleBasic />
-//   </>
+//   </>,
 // );
 
-// root.render(
-//   <ModuleTheme theme={style1} />
-// );
+root.render(<ModuleTheme theme={style3} />);
 
 // root.render(
 //   <ModuleNest />
