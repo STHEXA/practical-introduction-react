@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 export default function EmotionBasic() {
   const styles = css`
@@ -11,6 +11,7 @@ export default function EmotionBasic() {
     color: white;
   `;
 
+  // ({})で囲むことでStyle属性のような記述でCSSを書くこともできる
   // const styles = css({
   //   width: 300,
   //   padding: 10,
@@ -20,9 +21,9 @@ export default function EmotionBasic() {
   //   color: 'white',
   // });
 
-  // const others = css({
-  //   height: 150
-  // });
+  const others = css({
+    height: 150,
+  });
 
   // const plus = css`
   //   ${styles}
@@ -30,7 +31,9 @@ export default function EmotionBasic() {
   // `;
 
   return (
-    <div css={styles}><b>React</b>は、フロントエンド開発のためのJavaScriptライブラリです。</div>
+    <div css={[styles, others]}>
+      <b>React</b>は、フロントエンド開発のためのJavaScriptライブラリです。
+    </div>
     // <div css={[styles, others]}><b>React</b>は、フロントエンド開発のためのJavaScriptライブラリです。</div>
     // <div css={plus}><b>React</b>は、フロントエンド開発のためのJavaScriptライブラリです。</div>
   );

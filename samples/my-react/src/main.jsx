@@ -548,28 +548,26 @@ const root = createRoot(document.getElementById("root"));
 //   </>,
 // );
 
-root.render(<ModuleTheme theme={style3} />);
+// root.render(<ModuleTheme theme={style3} />);
 
 // root.render(
 //   <ModuleNest />
 // );
 
-// root.render(
-//   <EmotionBasic />
-// );
+// root.render(<EmotionBasic />);
 
-// const global = css`
-//   body {
-//     background-color: Yellow;
-//   }
-// `;
+const global = css`
+  body {
+    background-color: Yellow;
+  }
+`;
 
-// root.render(
-//   <>
-//     <Global styles={global} />
-//     <EmotionBasic />
-//   </>
-// );
+root.render(
+  <>
+    <Global styles={global} />
+    <EmotionBasic />
+  </>,
+);
 
 // root.render(
 //   <EmotionStyled />
