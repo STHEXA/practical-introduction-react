@@ -556,29 +556,27 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<EmotionBasic />);
 
-const global = css`
-  body {
-    background-color: Yellow;
-  }
-`;
-
-root.render(
-  <>
-    <Global styles={global} />
-    <EmotionBasic />
-  </>,
-);
-
-// root.render(
-//   <EmotionStyled />
-// );
+// const global = css`
+//   body {
+//     background-color: Yellow;
+//   }
+// `;
 
 // root.render(
 //   <>
-//     <MyButton>ボタン</MyButton>
-//     <MyStyledButton>ボタン</MyStyledButton>
-//   </>
+//     <Global styles={global} />
+//     <EmotionBasic />
+//   </>,
 // );
+
+// root.render(<EmotionStyled />);
+
+root.render(
+  <>
+    <MyButton>ボタン</MyButton>
+    <MyStyledButton>ボタン</MyStyledButton>
+  </>,
+);
 
 // root.render(
 //   <EmotionProps />
