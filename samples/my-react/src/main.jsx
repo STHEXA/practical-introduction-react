@@ -582,15 +582,13 @@ const root = createRoot(document.getElementById("root"));
 //   <EmotionProps />
 // );
 
-// root.render(<MotionBasic />);
+root.render(<MotionBasic />);
 
 // root.render(<MotionWhile />);
 
-root.render(<MotionExit />);
+// root.render(<MotionExit />);
 
-// root.render(
-//   <MotionRepeat />
-// );
+// root.render(<MotionRepeat />);
 
 // root.render(
 //   <MotionAll />
