@@ -571,20 +571,18 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<EmotionStyled />);
 
-root.render(
-  <>
-    <MyButton>ボタン</MyButton>
-    <MyStyledButton>ボタン</MyStyledButton>
-  </>,
-);
+// root.render(
+//   <>
+//     <MyButton>ボタン</MyButton>
+//     <MyStyledButton>ボタン</MyStyledButton>
+//   </>,
+// );
 
 // root.render(
 //   <EmotionProps />
 // );
 
-// root.render(
-//   <MotionBasic />
-// );
+root.render(<MotionBasic />);
 
 // root.render(
 //   <MotionWhile />

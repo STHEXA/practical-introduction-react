@@ -1,14 +1,25 @@
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
 
 export default function MotionBasic() {
   return (
     <div>
-      <motion.img src="/image/logo.jpg" alt="WINGS Project"
-        animate={{ rotate: 720, x: 500 }} transition={{ duration: 10 }}/>
-
       {/* <motion.img src="/image/logo.jpg" alt="WINGS Project"
-        initial={{ x: '100vw' }} animate={{ x: '40vw' }}
-        transition={{ duration: 2 }} /> */}
+        animate={{ rotate: 720, x: 500 }} transition={{ duration: 10 }}/> */}
+
+      {/* <motion.img
+        src="/image/logo.jpg"
+        alt="WINGS Project"
+        initial={{ x: "100vw" }}
+        animate={{ x: "40vw" }}
+      /> */}
+
+      <motion.img
+        src="/image/logo.jpg"
+        alt="WINGS Project"
+        initial={{ x: "100vw" }}
+        animate={{ x: "40vw" }}
+        transition={{ duration: 2 }}
+      />
 
       {/* springの場合 */}
       {/* <motion.img src="/image/logo.jpg" alt="WINGS Project"
