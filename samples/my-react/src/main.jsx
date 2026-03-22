@@ -584,11 +584,9 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<MotionBasic />);
 
-root.render(<MotionWhile />);
+// root.render(<MotionWhile />);
 
-// root.render(
-//   <MotionExit />
-// );
+root.render(<MotionExit />);
 
 // root.render(
 //   <MotionRepeat />
