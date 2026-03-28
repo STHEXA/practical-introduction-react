@@ -590,15 +590,11 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<MotionRepeat />);
 
-root.render(<MotionAll />);
+// root.render(<MotionAll />);
 
-// root.render(
-//   <MotionVariant />
-// );
+// root.render(<MotionVariant />);
 
-// root.render(
-//   <MotionNest />
-// );
+root.render(<MotionNest />);
 
 // root.render(
 //   <MotionFrame />
