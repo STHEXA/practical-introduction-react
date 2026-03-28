@@ -594,18 +594,16 @@ const root = createRoot(document.getElementById("root"));
 
 // root.render(<MotionVariant />);
 
-root.render(<MotionNest />);
+// root.render(<MotionNest />);
 
-// root.render(
-//   <MotionFrame />
-// );
+// root.render(<MotionFrame />);
 
-// root.render(
-//   <>
-//     <div id="dialog"></div>
-//     <PortalBasic />
-//   </>
-// );
+root.render(
+  <>
+    <div id="dialog"></div>
+    <PortalBasic />
+  </>,
+);
 
 // root.render(
 //   <ErrorRoot />
