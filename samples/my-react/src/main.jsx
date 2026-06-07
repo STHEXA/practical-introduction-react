@@ -605,19 +605,13 @@ const root = createRoot(document.getElementById("root"));
 //   </>,
 // );
 
-root.render(<ErrorRoot />);
+// root.render(<ErrorRoot />);
 
-// root.render(
-//   <ErrorRetryRoot />
-// );
+// root.render(<ErrorRetryRoot />);
 
-// root.render(
-//   <ErrorEventRoot />
-// );
+// root.render(<ErrorEventRoot />);
 
-// root.render(
-//   <MetaBasic />
-// );
+root.render(<MetaBasic />);
 
 // root.render(
 //   <ScriptBasic />
